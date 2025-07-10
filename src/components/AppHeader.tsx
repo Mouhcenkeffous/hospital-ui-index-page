@@ -13,8 +13,12 @@ export function AppHeader() {
             </div>
           </div>
           <div className="flex items-center space-x-4">
-            <Button variant="ghost" size="sm">Dashboard</Button>
-            <Button variant="ghost" size="sm">Hospitals</Button>
+            <Button variant="ghost" size="sm" asChild>
+              <a href="/dashboard">Dashboard</a>
+            </Button>
+            <Button variant="ghost" size="sm" asChild>
+              <a href="/">Add Hospital</a>
+            </Button>
             <Button variant="ghost" size="sm">Departments</Button>
             <Button variant="ghost" size="sm">Staff</Button>
             <div className="h-8 w-8 rounded-full bg-healthcare-100 flex items-center justify-center">
